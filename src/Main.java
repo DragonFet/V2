@@ -16,7 +16,7 @@ class Main {
 
     public static int divide(int a, int b) {
         if (b == 0) {
-            throw new ArithmeticException("Cannot divide by zero");
+            throw new ArithmeticException("Деление на 0 ! ");
         }
         return a / b;
     }
@@ -73,7 +73,7 @@ class Main {
     }
 
     public static String convertToRoman(int result) {
-        if (result < 2 || result > 100) {
+        if (result < 1 || result > 100) {
             throw new IllegalArgumentException("Результат выходит за пределы диапазона (от 2 до 100)");
         }
 
@@ -126,7 +126,7 @@ class Main {
                     throw new IllegalArgumentException("Недопустимый арифметический оператор");
             }
 
-            if (result < 2 || result > 100) {
+            if (result < 1 || result > 100) {
                 throw new IllegalArgumentException("Результат выходит за пределы диапазона (от 2 до 100)");
             }
             System.out.println(convertToRoman(result));
